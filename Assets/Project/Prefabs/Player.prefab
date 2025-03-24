@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4532816119438690704}
   - component: {fileID: 6560272060409778541}
   - component: {fileID: 5090838588520216082}
+  - component: {fileID: 6065515498927905085}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -106,6 +107,7 @@ MonoBehaviour:
   playerRigidbody2D: {fileID: 4532816119438690704}
   movementSpeed: 3
   jumpForce: 6
+  _grounded: 0
 --- !u!50 &4532816119438690704
 Rigidbody2D:
   serializedVersion: 5
@@ -225,3 +227,25 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!95 &6065515498927905085
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8387821598231648711}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
