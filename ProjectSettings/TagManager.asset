@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Players
+  - Traps
   layers:
   - Default
   - TransparentFX
