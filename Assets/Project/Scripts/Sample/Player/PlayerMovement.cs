@@ -1,4 +1,5 @@
 using System;
+using LondonPlatform.Core.Project.Scripts.Sample;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,13 +11,14 @@ namespace LondonPlatform.Core
     public class PlayerMovement : MonoBehaviour
     {
         [SerializeField] private Rigidbody2D playerRigidbody2D;
-
         [SerializeField] private GameObject SpawnPoint;
         [SerializeField] private float movementSpeed ;
         [SerializeField] private float jumpForce;
 
         [SerializeField] private bool _grounded;
         [SerializeField] private bool _canMove = true;
+
+        public static event Action DeathEvent;
         
         private void Start()
         {
@@ -45,6 +47,8 @@ namespace LondonPlatform.Core
             {
                 Debug.Log("Trapped");
                 _canMove = false;
+                DeathEvent?.Invoke();
+                
                 RespawnPlayer();
             }
         }
