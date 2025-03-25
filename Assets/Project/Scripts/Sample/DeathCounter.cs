@@ -13,12 +13,12 @@ namespace LondonPlatform.Core.Project.Scripts.Sample
 
         private void OnEnable()
         {
-            PlayerMovement.DeathEvent += DeathDetected;
+            Player.DeathEvent += DeathDetected;
         }
 
         private void OnDisable()
         {
-            PlayerMovement.DeathEvent -= DeathDetected;
+            Player.DeathEvent -= DeathDetected;
         }
 
         private void Start()
