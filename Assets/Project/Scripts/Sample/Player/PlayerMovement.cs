@@ -12,7 +12,7 @@ namespace LondonPlatform.Core
     {
         [SerializeField] private Rigidbody2D playerRigidbody2D;
         [SerializeField] private GameObject SpawnPoint;
-        [SerializeField] private float movementSpeed ;
+        [SerializeField] private float movementSpeed => GameController.Metrics.playerSpeed;
         [SerializeField] private float jumpForce;
 
         [SerializeField] private bool _grounded;
@@ -67,8 +67,7 @@ namespace LondonPlatform.Core
                 _grounded = true;
             }
         }
-
-
+        
         public void OnJump(InputAction.CallbackContext context)
         {
             if (context.performed && _grounded)
