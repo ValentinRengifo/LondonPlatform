@@ -7,9 +7,7 @@ namespace LondonPlatform.Core
     {
         
         public GameMetrics Global => GameController.Metrics;
-
-        [field: SerializeField]
-        public float playerSpeed { get; private set; }        
+        
         
     }
 }
