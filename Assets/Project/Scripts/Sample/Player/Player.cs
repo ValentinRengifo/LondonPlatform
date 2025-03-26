@@ -17,6 +17,8 @@ namespace LondonPlatform.Core
         [SerializeField] private Rigidbody2D playerRigidbody2D;
         [SerializeField] private GameObject SpawnPoint;
         [SerializeField] private float movementSpeed;
+        [SerializeField] private float Acceleration;
+        [SerializeField] private float Deceleration;
         [SerializeField] private float jumpForce;
         [SerializeField] private float SpeedBonusTime;
         [SerializeField] private float SpeedBonusAmount;
@@ -93,7 +95,16 @@ namespace LondonPlatform.Core
         {
             if (_canMove)
             {
-                playerRigidbody2D.linearVelocity = new Vector2(movementSpeed, playerRigidbody2D.linearVelocity.y);
+                if (playerRigidbody2D.linearVelocity.x < movementSpeed)
+                {
+                    playerRigidbody2D.AddForce(Vector2.right * Acceleration);
+                }
+
+                if (playerRigidbody2D.linearVelocity.x > movementSpeed)
+                {
+                    playerRigidbody2D.AddForce(Vector2.left * Deceleration);
+                }
+                //playerRigidbody2D.linearVelocity = new Vector2(movementSpeed, playerRigidbody2D.linearVelocity.y);
             }
         }
 
@@ -176,7 +187,7 @@ namespace LondonPlatform.Core
             if (context.performed && _grounded)
             {
                 _grounded = false;
-                playerRigidbody2D.linearVelocity = new Vector2(playerRigidbody2D.linearVelocity.x, jumpForce);
+                playerRigidbody2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             }
         }
     }
