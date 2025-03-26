@@ -10,8 +10,8 @@ namespace LondonPlatform.Core
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                OnTakeShieldPowerUp?.Invoke();
-                Destroy(gameObject);
+                OnTakeShieldPowerUp?.Invoke(); 
+                gameObject.SetActive(false);
             }
         }
     }

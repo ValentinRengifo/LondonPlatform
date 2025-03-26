@@ -12,6 +12,8 @@ namespace LondonPlatform.Core
 {
     public class Player : MonoBehaviour
     {
+        [SerializeField] private List<GameObject> DestroyedTraps;
+        
         [SerializeField] private Rigidbody2D playerRigidbody2D;
         [SerializeField] private GameObject SpawnPoint;
         [SerializeField] private float movementSpeed;
@@ -98,7 +100,6 @@ namespace LondonPlatform.Core
 
         public void OnCollisionEnter2D(Collision2D other)
         {
-            CheckIfGrounded(other);
             CheckIfTrapped(other);
         }
 
@@ -114,7 +115,8 @@ namespace LondonPlatform.Core
             }
             else if (other.gameObject.CompareTag("Traps") && gotShield)
             {
-                Destroy(other.gameObject);
+                other.gameObject.SetActive(false);
+                DestroyedTraps.Add(other.gameObject);
                 gotShield = false;
             }
         }
@@ -136,19 +138,39 @@ namespace LondonPlatform.Core
 
         private void RespawnPlayer()
         {
+            RespawnTraps();
             Vector3 position = SpawnPoint.transform.position;
             gameObject.transform.position = position;
             _canMove = true;
         }
 
-        private void CheckIfGrounded(Collision2D other)
+        private void RespawnTraps()
+        {
+            foreach (var trapDestroyed in DestroyedTraps)
+            {
+                trapDestroyed.SetActive(true);
+            }
+            DestroyedTraps.Clear();
+            
+        }
+
+        private void OnCollisionStay2D(Collision2D other)
         {
             if (other.gameObject.CompareTag("Ground"))
             {
                 _grounded = true;
             }
         }
-        
+
+        private void OnCollisionExit2D(Collision2D other)
+        {
+            if (other.gameObject.CompareTag("Ground"))
+            {
+                _grounded = false;
+            }
+        }
+
+
         public void OnJump(InputAction.CallbackContext context)
         {
             if (context.performed && _grounded)
