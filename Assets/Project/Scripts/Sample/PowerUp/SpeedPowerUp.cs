@@ -11,7 +11,7 @@ namespace LondonPlatform.Core
             if (other.gameObject.CompareTag("Player"))
             {
                 OnTakeSpeedPowerUp?.Invoke();
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
     }
