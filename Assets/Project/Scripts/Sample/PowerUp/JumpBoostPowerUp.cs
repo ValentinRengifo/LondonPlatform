@@ -6,11 +6,11 @@ namespace LondonPlatform.Core
     public class JumpBoostPowerUp : MonoBehaviour
     {
         public static event Action OnTakeJumpBoostPowerUp;
-        private void OnCollisionEnter2D(Collision2D other)
+        private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                OnTakeJumpBoostPowerUp?.Invoke();
+                OnTakeJumpBoostPowerUp?.Invoke(); 
                 gameObject.SetActive(false);
             }
         }

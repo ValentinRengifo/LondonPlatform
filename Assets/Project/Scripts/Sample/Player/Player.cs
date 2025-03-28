@@ -24,6 +24,7 @@ namespace LondonPlatform.Core
         [SerializeField] private float SpeedBonusAmount;
         [SerializeField] private float JumpBonusTime;
         [SerializeField] private float JumpBonusAmount;
+        [SerializeField] private float CiterneJumpForce;
         [SerializeField] private bool _grounded;
         [SerializeField] private bool _canMove = true;
         
@@ -38,14 +39,22 @@ namespace LondonPlatform.Core
             ShieldPowerUp.OnTakeShieldPowerUp += ShieldUp;
             SpeedPowerUp.OnTakeSpeedPowerUp += SpeedUp;
             JumpBoostPowerUp.OnTakeJumpBoostPowerUp += JumpUp;
+            Citerne.OnCiterneUp += CiterneUp;
         }
-        
+
+
         private void OnDisable()
         {
             ShieldPowerUp.OnTakeShieldPowerUp -= ShieldUp;
             SpeedPowerUp.OnTakeSpeedPowerUp -= SpeedUp;
             JumpBoostPowerUp.OnTakeJumpBoostPowerUp -= JumpUp;
+            Citerne.OnCiterneUp -= CiterneUp;
 
+        }
+        private void CiterneUp()
+        {
+            Debug.Log("CiterneUp");
+            playerRigidbody2D.AddForce(Vector2.up * CiterneJumpForce, ForceMode2D.Impulse);
         }
         
         private void JumpUp()

@@ -3,15 +3,15 @@ using UnityEngine;
 
 namespace LondonPlatform.Core
 {
-    public class SpeedPowerUp : MonoBehaviour
+    public class Citerne : MonoBehaviour
     {
-        public static event Action OnTakeSpeedPowerUp;
+        public static event Action OnCiterneUp;
+        
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                OnTakeSpeedPowerUp?.Invoke(); 
-                gameObject.SetActive(false);
+                OnCiterneUp?.Invoke();
             }
         }
     }
