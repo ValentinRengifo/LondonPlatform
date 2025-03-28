@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9c030a96797d9da4c819b920e77b2f65
+guid: d1fcf1665d7ed684cb91be517b73e704
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4399757351294867088
-    second: "MaisonAvecBarri\xE8re_0"
+      213: -8103965436074251406
+    second: balcon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "MaisonAvecBarri\xE8re_0"
+      name: balcon_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1480
-        height: 1348
+        x: 1161
+        y: 1419
+        width: 865
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09618d500041f0d30800000000000000
-      internalID: 4399757351294867088
+      spriteID: 27b20ce5f5ee88f80800000000000000
+      internalID: -8103965436074251406
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "MaisonAvecBarri\xE8re_0": 4399757351294867088
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: efa66e1c946274c4a86dcaac7f3bd07b
+guid: 85c257f7b85aac9489998da9760b34cc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5860794187520149896
-    second: "barri\xE8re_0"
+      213: -92585889707420512
+    second: batt_beige_bleu_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "barri\xE8re_0"
+      name: batt_beige_bleu_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1484
-        height: 153
+        x: 51
+        y: 91
+        width: 894
+        height: 818
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 876ff2ffcb64aaea0800000000000000
-      internalID: -5860794187520149896
+      spriteID: 0a496c4bf9117bef0800000000000000
+      internalID: -92585889707420512
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "barri\xE8re_0": -5860794187520149896
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
