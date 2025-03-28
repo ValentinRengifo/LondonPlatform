@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 309a33cb39bd42140ac5a42fc0f78b23
+guid: 33f1e6529d9dee849bb7396e7f492c23
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1991442710815905248
-    second: Locket_Queen_0
+      213: 7036083435118878903
+    second: Title_frame_0
+  - first:
+      213: -4526046636717597829
+    second: Title_frame_1
+  - first:
+      213: 3792157879516228306
+    second: Title_frame_2
+  - first:
+      213: -270502874005447932
+    second: Title_frame_3
+  - first:
+      213: 441405747385765691
+    second: Title_frame_4
+  - first:
+      213: -3299214670708190494
+    second: Title_frame_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +154,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Locket_Queen_0
+      name: Title_frame_0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 5
-        width: 160
-        height: 243
+        x: 5
+        y: 299
+        width: 323
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +169,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02ae647d769fc54e0800000000000000
-      internalID: -1991442710815905248
+      spriteID: 7b065400b9035a160800000000000000
+      internalID: 7036083435118878903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title_frame_1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 379
+        width: 74
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b989d50904031c0800000000000000
+      internalID: -4526046636717597829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title_frame_2
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 380
+        width: 83
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da63ccef7370a430800000000000000
+      internalID: 3792157879516228306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title_frame_3
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 299
+        width: 323
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40bde2cb11bfe3cf0800000000000000
+      internalID: -270502874005447932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title_frame_4
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 379
+        width: 74
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f8eb64030302600800000000000000
+      internalID: 441405747385765691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title_frame_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1
+        width: 639
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e25eaaacb5d632d0800000000000000
+      internalID: -3299214670708190494
       vertices: []
       indices: 
       edges: []
@@ -174,7 +299,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Locket_Queen_0: -1991442710815905248
+      Title_frame_0: 7036083435118878903
+      Title_frame_1: -4526046636717597829
+      Title_frame_2: 3792157879516228306
+      Title_frame_3: -270502874005447932
+      Title_frame_4: 441405747385765691
+      Title_frame_5: -3299214670708190494
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
