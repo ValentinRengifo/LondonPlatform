@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Telephonic_Cabin_0: -1588235457133728581
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

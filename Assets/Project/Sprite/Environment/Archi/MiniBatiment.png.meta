@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MiniBatiment_0: -3174352876023384884
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

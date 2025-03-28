@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "MaisonAvecBarri\xE8re_0": 4399757351294867088
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
