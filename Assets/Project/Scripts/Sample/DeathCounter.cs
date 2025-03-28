@@ -23,7 +23,7 @@ namespace LondonPlatform.Core.Project.Scripts.Sample
 
         private void Start()
         {
-            DeathCounterText.text = $"Total Death : {DeathCount.ToString()}";
+            DeathCounterText.text = $"x {DeathCount}";
         }
 
         public void DeathDetected()
@@ -34,7 +34,7 @@ namespace LondonPlatform.Core.Project.Scripts.Sample
 
         private void RefreshDeathCounter()
         {
-            DeathCounterText.text = $"Total Death : {DeathCount.ToString()}";
+            DeathCounterText.text = $"x {DeathCount}";
         }
     }
 }
