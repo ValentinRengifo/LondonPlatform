@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/SampleScenes/MainMenuSceneSample.unity
     guid: 0e0b8c898b277cc419109a62f3548eca
   - enabled: 1
-    path: Assets/Project/Scenes/SampleScenes/DydouSceneSample.unity
-    guid: aebe5c5c8c02c8942b107c885ee0a450
+    path: Assets/Project/Scenes/GameScenes/CinematicScene.unity
+    guid: c024c7c1208e90b4088a91b350ea0633
   - enabled: 1
-    path: Assets/Project/Scenes/GameScenes/GameScene.unity
-    guid: 0bb03e6a093ce014ea536c3ece7a96a7
+    path: Assets/Project/Scenes/SampleScenes/ValouSceneSample.unity
+    guid: 9cbae7fca36562a4889478777c547260
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

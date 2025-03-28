@@ -11,7 +11,12 @@ namespace LondonPlatform.Core
         
         public void Play()
         {
-            SceneManager.LoadScene("DydouSceneSample");
+            SceneManager.LoadScene("ValouSceneSample");
+        }
+
+        public void PlayCinematics()
+        {
+            SceneManager.LoadScene("CinematicScene");
         }
 
         public void Credits()
