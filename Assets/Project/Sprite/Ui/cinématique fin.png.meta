@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c7d4d8345c3f9fd428c8afa1e7b73ec9
+guid: d5c2f71b3f1d97d43bece8504831f688
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7791727523072196570
-    second: tour_corigee 1_0
+      213: 7112387514771480935
+    second: "cin\xE9matique fin_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tour_corigee 1_0
+      name: "cin\xE9matique fin_0"
       rect:
         serializedVersion: 2
-        x: 294
-        y: 3
-        width: 413
-        height: 994
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 620c5a0a9193ed390800000000000000
-      internalID: -7791727523072196570
+      spriteID: 761a0eaf2c644b260800000000000000
+      internalID: 7112387514771480935
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      tour_corigee 1_0: -7791727523072196570
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

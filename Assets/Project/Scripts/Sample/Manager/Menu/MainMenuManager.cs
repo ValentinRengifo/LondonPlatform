@@ -19,6 +19,11 @@ namespace LondonPlatform.Core
             SceneManager.LoadScene("CinematicScene");
         }
 
+        public void GoToMainMenu()
+        {
+            SceneManager.LoadScene("MainMenuSceneSample");
+        }
+
         public void Credits()
         {
             CreditsMenu.SetActive(true);
