@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6560272060409778541}
   - component: {fileID: 5090838588520216082}
   - component: {fileID: 6065515498927905085}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.391092, y: -0.85400724, z: -0.0012088297}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.31057, y: 0.31057, z: 0.31057}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e0dc7202cd7cd4d4d8ed2f30aad327da, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6ea1cc3a1aa833f4a886fbae0a14d336, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,13 +107,15 @@ MonoBehaviour:
   DestroyedTraps: []
   playerRigidbody2D: {fileID: 4532816119438690704}
   SpawnPoint: {fileID: 0}
-  movementSpeed: 5
-  jumpForce: 6
-  SpeedBonusTime: 0
-  SpeedBonusAmount: 0
-  JumpBonusTime: 0
-  JumpBonusAmount: 0
-  _grounded: 0
+  movementSpeed: 10
+  Acceleration: 150
+  Deceleration: 75
+  jumpForce: 115
+  SpeedBonusTime: 5
+  SpeedBonusAmount: 3
+  JumpBonusTime: 5
+  JumpBonusAmount: 50
+  _grounded: 1
   _canMove: 1
   <gotShield>k__BackingField: 0
   <gotSpeedPowerUp>k__BackingField: 0
@@ -133,17 +135,17 @@ Rigidbody2D:
   m_Mass: 3
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1.2
-  m_Material: {fileID: 0}
+  m_GravityScale: 10
+  m_Material: {fileID: 6200000, guid: 754822497f27fcd458f382cddb28504f, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &6560272060409778541
 BoxCollider2D:
@@ -179,17 +181,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.26563406, y: -0.03690505}
+  m_Offset: {x: -0.33303416, y: 0.4709127}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.91, y: 9.05}
+    oldSize: {x: 10.24, y: 10.24}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.4191751, y: 9.036877}
+  m_Size: {x: 3.8716977, y: 8.619423}
   m_EdgeRadius: 0
 --- !u!114 &5090838588520216082
 MonoBehaviour:
@@ -251,7 +253,7 @@ Animator:
   m_GameObject: {fileID: 8387821598231648711}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ea5454b728e4154f9d9e5696ced9bd5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
